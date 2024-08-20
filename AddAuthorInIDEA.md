@@ -23,6 +23,8 @@ To change the date format in IntelliJ IDEA's file templates to `2024-08-19`, you
        // Your code here
    }
    ```
+   <img width="401" alt="Screenshot 2024-08-20 at 9 57 47 AM" src="https://github.com/user-attachments/assets/e1b1978e-3c71-4f0c-8f57-8797cf78f4e7">
+
 
    - `${YEAR}`: Inserts the current year.
    - `${MONTH}`: Inserts the current month in two digits.
