@@ -1,4 +1,4 @@
-To change the date format in IntelliJ IDEA's file templates to `2024-08-19`, you can modify the template as follows:
+Add Author & Program & Date comment in IDEA
 
 ### Step 1: Modify the Date Format in the File Template
 1. **Open IntelliJ IDEA**.
@@ -13,12 +13,15 @@ To change the date format in IntelliJ IDEA's file templates to `2024-08-19`, you
    - Select the template you want to modify, such as `Class` for Java classes.
 
 5. **Modify the Template with the Desired Date Format**:
+   - Do not overlap all the codes, just add the `@Author...`
    - Replace the `${DATE}` variable with a Groovy script to format the date as `YYYY-MM-DD`. Here’s how you can do it:
    ```java
+  
    /**
-    * @author ${USER}
-    * @date ${YEAR}-${MONTH}-${DAY}
-    */
+    * @Program: ${PROGRAM}
+    * @Author: ${AUTHOR}
+    * @Create ${YEAR}-${MONTH}-${DAY}
+    **/
    public class ${NAME} {
        // Your code here
    }
@@ -31,7 +34,7 @@ To change the date format in IntelliJ IDEA's file templates to `2024-08-19`, you
 
    By using dashes `-` between these variables, the date will be formatted as `2024-08-19`.
 
-6. **Save Your Changes**:
+7. **Save Your Changes**:
    - Click `OK` or `Apply` to save your changes.
 
 ### Step 2: Test the Configuration
@@ -45,10 +48,12 @@ To change the date format in IntelliJ IDEA's file templates to `2024-08-19`, you
 When you create a new Java class, it might look like this:
 
 ```java
+
 /**
- * @author JohnDoe
- * @date 2024-08-19
- */
+ * @Program: demo
+ * @Author: Pony
+ * @Create 2024-8-24
+ **/
 public class MyNewClass {
     // Your code here
 }
